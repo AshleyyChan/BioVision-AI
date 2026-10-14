@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Build artifacts
+dist/
+frontend/dist/
+.vite/
+
+# Logs
+*.log
+backend/logs/*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Confidential User Storage & Experiment Data
+backend/storage/*
+!backend/storage/uploads/
+!backend/storage/studies/
+!backend/storage/results/
+!backend/storage/metadata/
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+backend/storage/studies/*
+!backend/storage/studies/.gitkeep
+backend/storage/results/*
+!backend/storage/results/.gitkeep
+backend/storage/metadata/*
+!backend/storage/metadata/.gitkeep
+
+# Confidential Microscopy & Image Data
+backend/storage/**/*.png
+backend/storage/**/*.jpg
+backend/storage/**/*.jpeg
+backend/storage/**/*.tif
+backend/storage/**/*.tiff
+backend/storage/**/*.webp
+backend/storage/**/*.bmp
+backend/storage/**/*.json
